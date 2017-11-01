@@ -28,11 +28,7 @@ app.use(express.static(path.join(__dirname, 'server/public')));
 
 // Add routes
 const links = require('./routes/links');
-// const countries = require('./routes/countries');
-// const systems = require('./routes/systems');
 app.use('/api/links', links);
-// app.use('/api/countries', countries);
-// app.use('/api/systems', systems);
 
 
 // Create HTTP server
